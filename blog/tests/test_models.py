@@ -1,5 +1,5 @@
 from django.test import TestCase
-from models import Post, Comment
+from blog.models import Post, Comment
 
 class PostModelTestCase(TestCase):
     def setUp(self):
