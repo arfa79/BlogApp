@@ -4,7 +4,7 @@ services:
   web:
     build:
       context: .
-      dockerfile: ./docker/django/django.Dockerfile
+      dockerfile: ./docker/django/Dockerfile
     ports:
       - "8000:8000"
     volumes:
@@ -16,19 +16,19 @@ services:
   db:
     build:
       context: .
-      dockerfile: ./docker/postgresql/postgresql.Dockerfile
+      dockerfile: ./docker/postgresql/Dockerfile
     ports:
       - "5432:5432"
   redis:
     build:
       context: .
-      dockerfile: ./docker/redis/redis.Dockerfile
+      dockerfile: ./docker/redis/Dockerfile
     ports:
       - "6379:6379"
   celery:
     build:
       context: .
-      dockerfile: ./docker/celery/celery.Dockerfile
+      dockerfile: ./docker/celery/Dockerfile
     volumes:
       - .:/app
     depends_on:
