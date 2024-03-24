@@ -26,14 +26,17 @@ SECRET_KEY = 'django-insecure-btpj4ws@sms2$4iddv0_l0pc=e5(jqiat73m+owbp*en8=65i4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['testserver']
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'testserver'
+]
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'blog',
-    'django_ninja',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -80,11 +83,11 @@ WSGI_APPLICATION = 'BlogApp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'BlogApp',
-        'USER': 'postgres',
-        'PASSWORD': 'arfa313enternrog55',
+        'NAME': 'blogdb',
+        'USER': 'myuser',
+        'PASSWORD': 'mypassword',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 
@@ -124,12 +127,17 @@ USE_TZ = True
 CELERY_BROKER_URL = 'memory://'
 #CELERY_BROKER_URL = 'redis://localhost:6379/0'
 CELERY_RESULT_BACKEND = 'redis://localhost:6379/0'
-
+#djcelery configuration
+BROKER_HOST = "localhost"
+BROKER_PORT = 5672
+BROKER_USER = "guest"
+BROKER_PASSWORD = "guest"
+BROKER_VHOST = "/"
 # Set the default Django settings module for the 'celery' program
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'your_project_name.settings')
 
 # Create a Celery app instance
-djcelery.setup_loader()
+#djcelery.setup_loader()
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
