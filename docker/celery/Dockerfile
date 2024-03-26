@@ -1,10 +1,7 @@
-FROM python:3.10
+FROM celery:4.0.2
 
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-
 COPY . .
 
-CMD ["celery", "worker", "-A", "BlogApp", "--loglevel=info"]
+CMD ["celery", "-A",  "BlogApp", "worker", "--loglevel=info"]

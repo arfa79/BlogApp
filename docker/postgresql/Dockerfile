@@ -1,4 +1,4 @@
-FROM postgres:latest
+FROM postgres:16.2
 
 ENV POSTGRES_DB=blogdb \
     POSTGRES_USER=myuser \
