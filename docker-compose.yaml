@@ -11,12 +11,18 @@ services:
       - db
       - redis
       - celery
+    restart : always
   db:
-    build:
-      context: .
-      dockerfile: ./docker/postgresql/Dockerfile
+    image: postgres:16.2
+    environment:
+      POSTGRES_DB: blogdb
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
     ports:
       - "5432:5432"
+    restart : always
   redis:
     build:
       context: .

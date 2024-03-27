@@ -5,3 +5,4 @@ ENV POSTGRES_DB=blogdb \
     POSTGRES_PASSWORD=mypassword
 
 EXPOSE 5432
+CMD ["postgre"]
