@@ -1,4 +1,4 @@
-FROM postgres:16.2
+FROM postgres:16.2-alpine
 
 ENV POSTGRES_DB=blogdb \
     POSTGRES_USER=myuser \
