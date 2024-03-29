@@ -16,7 +16,8 @@ This is a Dockerized Django application for managing blog posts, integrating Cel
 
 ## Project Purpose
 
-BlogApp aims to provide a platform for viewing, creating, and updating blog posts. It utilizes Django and Celery to handle backend logic, Django Ninja for API development, and integrates with PostgreSQL and Redis for data storage and caching.
+BlogApp aims to provide a platform for viewing, creating, and updating blog posts. It utilizes Django and Celery to handle backend logic, Django Ninja for API development, and integrates with PostgreSQL and Redis for data storage and caching.The project also includes GitHub Actions for continuous integration.
+
 ## Dependencies
 
 BlogApp has the following dependencies:
