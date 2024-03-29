@@ -59,7 +59,8 @@ In another terminal with the environment activated and in the project directory,
     sh postgre.sh
 
 This migrates the database and creates a superuser.
-Access the server at http://localhost:8000.
+Access the server at http://localhost:8000/admin
+Please notice you need to pass the authentication first in admin panal based on superuser information .
 To shut down the server and clean up, use:
 
     sh end.sh
@@ -76,9 +77,9 @@ This will run tests.
 
 Contributions to BlogApp are welcome! If you'd like to contribute, please follow these guidelines:
 
-    Fork the repository and create a new branch for your feature or fix.
-    Ensure your code follows the project's coding standards.
-    Submit a pull request with a clear description of the changes.
+Fork the repository and create a new branch for your feature or fix.
+Ensure your code follows the project's coding standards.
+Submit a pull request with a clear description of the changes.
 
 ## License
 
