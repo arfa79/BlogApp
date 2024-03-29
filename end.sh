@@ -1,5 +1,6 @@
 #!/bin/bash
+# Remove pgdata volume for the related container 
 sudo rm -rf pgdata
+# Creating pgdata folder again for next time build
 mkdir pgdata
 docker-compose down 
-docker rmi $(docker images | grep 'blogapp') redis:7.2.4-alpine postgres:14.1-alpine

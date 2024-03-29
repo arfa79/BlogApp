@@ -46,9 +46,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-# custom user model setting
+# Custom user model setting
 AUTH_USER_MODEL = 'blog.CustomUser'
-# authentication configuration
+# Authentication configuration
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',  # Default authentication backend
 ]
@@ -62,7 +62,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
-# redis configurations
+# Redis configurations
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
@@ -150,7 +150,7 @@ USE_TZ = True
 
 # Celery Configuration
 CELERY_BROKER_URL = 'redis://localhost:6379/0'
-#djcelery configuration
+# djcelery configuration
 BROKER_HOST = "localhost"
 BROKER_PORT = 5672
 BROKER_USER = "guest"
