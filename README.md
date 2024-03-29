@@ -32,10 +32,10 @@ BlogApp has the following dependencies:
 - pytest
 
 To install the Python dependencies, activate the virtual environment and run:
-```bash
-pip install -r requirements.txt
 
-Configuration
+    pip install -r requirements.txt
+
+##Configuration
 
 The project includes a settings.py file for Django configuration. Key configurations include database settings, authentication settings, Redis configurations, and Celery configuration.
 
