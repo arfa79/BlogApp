@@ -60,7 +60,7 @@ In another terminal with the environment activated and in the project directory,
 
 This migrates the database and creates a superuser with information you provide in terminal.
 Access the server at http://localhost:8000/ </br>
-Please notice you need to pass the authentication first in admin panal based on superuser information . </br>
+Please notice you need to pass the authentication first in admin panel based on superuser information . </br>
 To shut down the server and clean up, use:
 
     sh end.sh
