@@ -87,5 +87,5 @@ BlogApp is licensed under the GNU General Public License v3.0 (GPL-3.0).
 
 ## Contact
 
-For any questions or feedback, feel free to reach out to the project maintainer(s) at arfa79lg@lg.com
+For any questions or feedback, feel free to reach out to the project maintainer(s) at arfa79lg@gmail.com
 
